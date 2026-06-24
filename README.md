@@ -14,7 +14,7 @@
 
 ### 🎬 Ce que je fais
 
-Entre deux montages, je construis des **outils sur-mesure** pour fluidifier le travail d'une équipe vidéo : automatisation des rushes, intégrations Premiere Pro, téléchargement de sources, IA en local. Le tout pensé pour des gens qui montent, pas pour des devs.
+Entre deux montages, je construis des **outils sur-mesure** pour fluidifier le travail de l'équipe vidéo de Frandroid : automatisation des rushes, intégrations Premiere Pro, téléchargement de sources, IA en local. Le tout pensé pour des gens qui montent, pas pour des devs.
 
 ### 🚀 Projets publics
 
