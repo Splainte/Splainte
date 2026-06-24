@@ -48,3 +48,5 @@ Entre deux montages, je construis des **outils sur-mesure** pour fluidifier le t
 ---
 
 <p align="center"><sub>« Faire des outils que l'équipe oublie qu'ils sont là. »</sub></p>
+
+<!-- profil -->
