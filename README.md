@@ -27,12 +27,6 @@ Applique warpstab + ajuste la vitesse de lecture. Architecture CEP avec nid inve
 
 ## Philosophie
 
-> « Faire des outils que l'équipe oublie qu'ils sont là. »
-
 Chaque projet cible la friction réelle : pas de MVP académique, mais des solutions rodées qui s'intègrent dans les workflows existants. Documentées pour une prise en main immédiate, testées en conditions réelles avant la livraison.
-
-## Système autonome
-
-Machine agent IA 24/7 sous Linux (Ubuntu Server) avec accès cloud Anthropic. Architecture multi-services pour scrapage, orchestration et analyse : superviseurs systemd, CTL à chaud via Tailscale, dashboards locaux. Permet de valider les outils sur des vraies données Frandroid (volumes, timing, formats réels).
 
 <!-- profil -->
