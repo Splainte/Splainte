@@ -18,17 +18,6 @@ Observe les changements dans une arborescence (add/rename/delete) et les propage
 **[StableWarp](https://github.com/Splainte/StableWarp)** — Stabilisation intelligente pour Premiere  
 Applique warpstab + ajuste la vitesse de lecture. Architecture CEP avec nid inversé (stabilité à 100%, commande vitesse en surcharge). Exploitation des API Premiere séquence/clip, fin du support CEP prévue septembre 2026.
 
-## Stack technique
-
-**Langages :** Python · Rust · JavaScript · TypeScript · Java (Android natif)  
-**Runtimes & frameworks :** Tauri v2 · Node.js · FastAPI · CEP (Adobe) · UXP  
-**Outils & infra :** Ollama · Docker · Playwright · yt-dlp · FFmpeg · Whisper · Claude API  
-**Plateformes :** Adobe Creative Suite · Premiere Pro scripting · macOS/Windows/Linux · Android 14+
-
-## Philosophie
-
-Chaque projet cible la friction réelle : pas de MVP académique, mais des solutions rodées qui s'intègrent dans les workflows existants. Documentées pour une prise en main immédiate, testées en conditions réelles avant la livraison.
-
 ## Projets privés
 
 **Feedback** — Plateforme de review vidéo (Frame.io-like)  
@@ -39,6 +28,17 @@ Interface FileZilla-style pour gérer les transferts vers infrastructure distant
 
 **DropCLI** — Terminal web persistant (node-pty + xterm.js)  
 Interface web qui reflète un terminal distant : PTY persistants même après déconnexion, reconnexion auto, sessions multi-utilisateurs. Utilisé en interne pour piloter machine agent IA via navigateur.
+
+## Stack technique
+
+**Langages :** Python · Rust · JavaScript · TypeScript · Java (Android natif)  
+**Runtimes & frameworks :** Tauri v2 · Node.js · FastAPI · CEP (Adobe) · UXP  
+**Outils & infra :** Ollama · Docker · Playwright · yt-dlp · FFmpeg · Whisper · Claude API  
+**Plateformes :** Adobe Creative Suite · Premiere Pro scripting · macOS/Windows/Linux · Android 14+
+
+## Philosophie
+
+Chaque projet cible la friction réelle : pas de MVP académique, mais des solutions rodées qui s'intègrent dans les workflows existants. Documentées pour une prise en main immédiate, testées en conditions réelles avant la livraison.
 
 ## Système autonome
 
