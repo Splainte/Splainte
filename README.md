@@ -29,4 +29,18 @@ Applique warpstab + ajuste la vitesse de lecture. Architecture CEP avec nid inve
 
 Chaque projet cible la friction réelle : pas de MVP académique, mais des solutions rodées qui s'intègrent dans les workflows existants. Documentées pour une prise en main immédiate, testées en conditions réelles avant la livraison.
 
+## Projets privés
+
+**Feedback** — Plateforme de review vidéo (Frame.io-like)  
+Centralize le workflow de retour client sur conteneur Docker/Fastify. Freelances et équipe interne déposent/commentent les versions directement via un web client branché au NAS. Remplace le découpage drive/mail/slack par un lien unique par projet.
+
+**Copiteur** — GUI de transfert fichiers (Tauri + rclone sidecar)  
+Interface FileZilla-style pour gérer les transferts vers infrastructure distante (NAS Neufsept, seedbox). Drag-and-drop, synchronisation bi-directionnelle, gestion de quotas réseau.
+
+**DropCLI** — Terminal web persistant (node-pty + xterm.js)  
+Interface web qui reflète un terminal distant : PTY persistants même après déconnexion, reconnexion auto, sessions multi-utilisateurs. Utilisé en interne pour piloter machine agent IA via navigateur.
+
+## Système autonome
+
+Machine agent IA 24/7 sous Linux (Ubuntu Server) avec accès cloud Anthropic. Architecture multi-services pour scrapage, orchestration et analyse : superviseurs systemd, CTL à chaud via Tailscale, dashboards locaux. Permet de valider les outils sur des vraies données Frandroid (volumes, timing, formats réels).
 <!-- profil -->
