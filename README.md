@@ -2,7 +2,7 @@
 
 **Responsable chaîne YouTube [Frandroid](https://www.youtube.com/@Frandroid)** · Développeur d'outils pour production vidéo et systèmes d'IA autonomes.
 
-Depuis 2020, je conçois et maintiens des outils d'automatisation dédiés aux workflows vidéo professionnels : téléchargement de sources, intégration Premiere Pro, dérush automatisé, orchestration multi-agents. Orienté pratique — chaque ligne de code répond à un cas d'usage terrain chez Frandroid ou en prestation.
+Je conçois et maintiens des outils d'automatisation dédiés aux workflows vidéo professionnels : téléchargement de sources, intégration Premiere Pro, dérush automatisé, orchestration multi-agents. Orienté pratique — chaque ligne de code répond à un cas d'usage terrain chez Frandroid ou en prestation.
 
 ## Projets publics
 
