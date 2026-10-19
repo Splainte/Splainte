@@ -2,38 +2,44 @@
 
 **Responsable chaîne YouTube [Frandroid](https://www.youtube.com/@Frandroid)** · Développeur d'outils pour production vidéo et systèmes d'IA autonomes.
 
-Je conçois et maintiens des outils d'automatisation dédiés aux workflows vidéo professionnels : téléchargement de sources, intégration Premiere Pro, dérush automatisé, orchestration multi-agents. Orienté pratique — chaque ligne de code répond à un cas d'usage terrain chez Frandroid ou en prestation.
+Je conçois et maintiens des outils d'automatisation dédiés aux workflows vidéo professionnels : téléchargement de sources, intégration Premiere Pro, sous-titrage, dérush automatisé, transferts de fichiers, orchestration d'agents IA. Orienté pratique — chaque ligne de code répond à un cas d'usage terrain chez Frandroid ou en prestation.
 
 ## Projets publics
 
-**[Robloader](https://github.com/Splainte/Robloader)** — Téléchargeur multi-plateforme (Rust)  
-Récupère des vidéos depuis YouTube, TikTok, Instagram, X, Weibo avec filtrages intelligents. Interface native Tauri + WebView, file d'attente, mises à jour in-app silencieuses. Signature cryptographique sur Windows et macOS.
+**[Robloader](https://github.com/Splainte/Robloader)** — Téléchargeur vidéo multi-plateforme (Tauri + Rust)  
+Récupère des vidéos depuis YouTube, TikTok, Instagram, X et Weibo en un clic. Interface native Windows/macOS, file d'attente, cookies du navigateur pour la 4K et les contenus restreints, mises à jour in-app. Disponible en français et en anglais.
 
-**[Robloader Extension](https://github.com/Splainte/Robloader-Extension)** — Panneau Adobe Premiere Pro  
-Intègre Robloader directement dans Premiere : télécharge et importe automatiquement dans des chutiers structurés. CEP (panel COM-based), détection des encodeurs matériels GPU, transcription locale Whisper en parallèle, gestion des fichiers H.264 long-GOP.
+**[Copiteur](https://github.com/Splainte/Copiteur)** — Client de transfert SFTP (Tauri + rclone)  
+Double explorateur façon FileZilla, motorisé par rclone : parallélise même un seul gros fichier pour tenir 100+ Mo/s depuis un NAS ou un serveur. Glisser-déposer dans les deux sens, file d'attente avec reprise automatique après coupure réseau, mises à jour signées. Windows et macOS, en français ou en anglais.
 
-**[Sauron](https://github.com/Splainte/Sauron)** — Surveilleur de projet Premiere  
-Observe les changements dans une arborescence (add/rename/delete) et les propage automatiquement aux chutiers Premiere via chemins relatifs. Évite la fragilité des symlinks, utilise chokidar côté système et scripting Premiere CEP.
+**[Coquille](https://github.com/Splainte/Coquille)** — Sous-titrage augmenté par IA pour Premiere Pro  
+Transcrit la séquence, corrige le jargon tech (noms de produits, anglicismes, homophones) sans toucher au timing, découpe en lignes équilibrées et insère une vraie piste de sous-titres. Glossaire et règles par média, suggestions de l'IA validées une par une.
 
-**[StableWarp](https://github.com/Splainte/StableWarp)** — Stabilisation intelligente pour Premiere  
-Applique warpstab + ajuste la vitesse de lecture. Architecture CEP avec nid inversé (stabilité à 100%, commande vitesse en surcharge). Exploitation des API Premiere séquence/clip, fin du support CEP prévue septembre 2026.
+**[Robloader Extension](https://github.com/Splainte/Robloader-Extension)** — Robloader dans un panneau Premiere Pro  
+Colle une URL : la vidéo est téléchargée, préparée et importée automatiquement dans le chutier `ELEMENTS/Robloader` du projet ouvert. Transcodage H.265 pour éviter les artefacts de décodage de Premiere, extraction d'un segment, yt-dlp mis à jour tout seul.
+
+**[StableWarp](https://github.com/Splainte/StableWarp)** — Stabilisation + vitesse pour Premiere  
+Applique Stabilisation de déformation et changement de vitesse sur un même plan, ce que Premiere refuse nativement : le plan est stabilisé à 100 % dans une séquence imbriquée, la vitesse est appliquée par-dessus. Évite aussi le bandeau bleu d'une stabilisation qui n'a pas abouti.
 
 ## Projets privés
 
-**Feedback** — Plateforme de review vidéo (Frame.io-like)  
-Centralize le workflow de retour client sur conteneur Docker/Fastify. Freelances et équipe interne déposent/commentent les versions directement via un web client branché au NAS. Remplace le découpage drive/mail/slack par un lien unique par projet.
+**Derusher** — Dérush automatique dans Premiere  
+Détecte silences et mauvaises prises (transcription + LLM) pour pré-monter les rushes.
 
-**Copiteur** — GUI de transfert fichiers (Tauri + rclone sidecar)  
-Interface FileZilla-style pour gérer les transferts vers infrastructure distante (NAS Neufsept, seedbox). Drag-and-drop, synchronisation bi-directionnelle, gestion de quotas réseau.
+**DropCLI** — Interface web miroir de Claude Code (node-pty + xterm.js)  
+Terminaux persistants même après déconnexion, reconnexion automatique, vue chat mobile. Sert à piloter la machine agent IA depuis n'importe quel navigateur.
 
-**DropCLI** — Terminal web persistant (node-pty + xterm.js)  
-Interface web qui reflète un terminal distant : PTY persistants même après déconnexion, reconnexion auto, sessions multi-utilisateurs. Utilisé en interne pour piloter machine agent IA via navigateur.
+**Feedback** — Plateforme de review vidéo façon Frame.io  
+Un lien unique par projet pour que monteurs externes et équipe déposent et commentent les versions, branché directement sur le NAS.
+
+**Catapulte** — Mise en ligne YouTube automatisée  
+Upload via l'API YouTube, transcription locale et génération assistée du titre, de la description et des tags.
 
 ## Stack technique
 
-**Langages :** Python · Rust · JavaScript · TypeScript · Java (Android natif)  
+**Langages :** Python · Rust · TypeScript · JavaScript (React) · Java (Android natif)  
 **Runtimes & frameworks :** Tauri v2 · Node.js · FastAPI · CEP (Adobe) · UXP  
-**Outils & infra :** Ollama · Docker · Playwright · yt-dlp · FFmpeg · Whisper · Claude API  
+**Outils & infra :** rclone · Docker · Playwright · yt-dlp · FFmpeg · Whisper · Claude API  
 **Plateformes :** Adobe Creative Suite · Premiere Pro scripting · macOS/Windows/Linux · Android 14+
 
 ## Philosophie
