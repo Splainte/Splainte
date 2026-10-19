@@ -18,11 +18,8 @@ Transcrit la séquence, corrige le jargon tech (noms de produits, anglicismes, h
 **[Robloader Extension](https://github.com/Splainte/Robloader-Extension)** — Robloader dans un panneau Premiere Pro  
 Colle une URL : la vidéo est téléchargée, préparée et importée automatiquement dans le chutier `ELEMENTS/Robloader` du projet ouvert. Transcodage H.265 pour éviter les artefacts de décodage de Premiere, extraction d'un segment, yt-dlp mis à jour tout seul.
 
-**[Sauron](https://github.com/Splainte/Sauron)** — Import automatique dans Premiere  
-Surveille une arborescence de dossiers et reproduit les ajouts, renommages et suppressions dans des chutiers miroirs de Premiere, via chemins relatifs.
-
 **[StableWarp](https://github.com/Splainte/StableWarp)** — Stabilisation + vitesse pour Premiere  
-Applique Stabilisation de déformation et changement de vitesse sur un même plan, ce que Premiere refuse nativement : le plan est stabilisé à 100 % dans une séquence imbriquée, la vitesse est appliquée par-dessus.
+Applique Stabilisation de déformation et changement de vitesse sur un même plan, ce que Premiere refuse nativement : le plan est stabilisé à 100 % dans une séquence imbriquée, la vitesse est appliquée par-dessus. Évite aussi le bandeau bleu d'une stabilisation qui n'a pas abouti.
 
 ## Projets privés
 
